@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eric Cortes Mendoza">
+    <title>Compilacion HTML y Contenedores Semanticos</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="../Tarea1/index.html" target="_blank">Tarea 1</a></li>
+                <li><a href="../Tarea2/index.html" target="_blank">Tarea 2</a></li>
+                <li><a href="../Tarea3/index.html" target="_blank">Tarea 3</a></li>
+                <li><a href="../Tarea4/index.html" target="_blank">Tarea 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Lenguaje de Marcado de Hipertexto (HTML)</h1>
+        <p>
+            Bienvenidos, Hoy estaremos practicando algunos conceptos y elementos mas importantes
+            Vistos hasta el momento en la materia de Programacion Web 1, ademas veremos el uso de <strong>etiquetas semanticas</strong>
+            en la estructuracion de un sitio web.
+        </p>
+    </section>
+    <main>
+        <section>
+            <h2>Conceptos principales de HTML</h2>
+            <article>
+                <h3>HTML</h3>
+                <p>
+                    Lenguaje de marcado de hipertexto, que se utiliza
+                    para hacer o estructurar una pagina web.
+                </p>
+            </article>
+            <article>
+                <h3>Elemento HTML</h3>
+                <p>
+                    Es la unidad basica de una estuctura y contenido de una pagina web, esta compuesta de:
+                </p>
+            <ol type="I">
+                <li>Etiqueta de apertura</li>
+                <li>Pares Atributo-Valor</li>
+                <li>Contenido</li>
+                <li>Etiqueta de cierre</li>
+            </ol>
+            </article>
+            <article>
+                <h3>Etiqueta <code>&lt;head&gt;</code></h3>
+                <p>
+                    Es una etiqueta que contiene metadatos, es la forma en que una pagina web se
+                    comunica con el navegador, funciona para el SEO, se pueden enlazar archivos CSS o
+                    Script.
+                </p>
+            </article>
+            <article>
+                <h3>Etiqueta <code>&lt;body&gt;</code></h3>
+                <p>
+                    Contiene todo el contenido HTML
+                </p>
+            </article>
+            <article>
+                <h3>Contenedores Semanticos</h3>
+                <table border="1px">
+                    <tr>
+                        <th><code>&lt;header&gt;</code></th>
+                        <td>Etiqueta utlizada para el contenido introductorio de una pagina web puede contener
+                            el logo el menu de navegacion principal, el nombre de la empresa etc.</td>
+                    </tr>
+
+                    <tr>
+                        <th><code>&lt;nav&gt;</code></th>
+                        <td>Etiqueta utilizada para el menu de navegacion principal suele contener enlaces a otras paginas relacionadas
+                            o navegar por la pagina principal no debe de haber mas en la pagina
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><code>&lt;main&gt;</code></th>
+                        <td>Etiqueta unica de una pagina web cuyo proposito es resaltar nuestro objetivo o mensaje
+                            principal del sitio web, dentro se colocara el contenido principal de nuestra pagina
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><code>&lt;section&gt;</code></th>
+                        <td>Es una etiqueta que poco a poco se intenta que sutituya a <code>&lt;div&gt;</code> su uso es para dividir la pagina en secciones
+                            y agrupar contenido relacionado
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><code>&lt;article&gt;</code></th>
+                        <td> Es una etiqueta que se utiliza para agrupar contenido autonomo que si se separa de otro contenido
+                            sigue teniendo coherencia normalmente se compone de un encabezado y contenido
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><code>&lt;footer&gt;</code></th>
+                        <td> Es una etiqueta que normalmente se encuentra hasta el final de una pagina y funciona
+                            como cierre del sitio web, a menudo contiene datos de contacto, derechos de autor u otra informacion complementada 
+                        </td>
+                    </tr>
+
+                </table>
+            </article>
+        </section>  
+        <section>
+            <h2>Etiquetas principales HTML</h2>
+            <article>
+                <h3>Etiqueta <code>&lt;a&gt;</code></h3>
+                <p>Es un elemento que nos va a permitir navegar a:</p>
+                <ul>
+                    <li>Paginas Externas</li>
+                    <li>Paginas Internas</li>
+                    <li>Secciones dentro de nuestra misma pagina (enlaces ancla)</li>
+                </ul>
+                <p>Algunos valores especificos para el atributo href son:</p>
+                <dl>
+                    <dt>href="https://wa.me/5613738095"</dt>
+                    <dd>Abre un chat del numero especificado en Whatsapp</dd>
+                    <dt>href="mailto:example@gmail.com"</dt>
+                    <dd>Abre una aplicacion de correo, con el destinatario especificado</dd>
+                </dl>
+            </article>
+            <article>
+                <h3>Etiqueta <code>&lt;form&gt;</code></h3>
+                <p>
+                    Es el medio con el que los usuarios pueden comunicarse con nuestra pagina web a traves
+                    de este elemento, podemos recopilar informacion para posteriormente procesarla.
+                </p>
+            </article>
+            <article>
+                <p>Un ejemplo de un formulario de inicio de sesion.</p>
+                <form action="/inicio_sesion" method="post">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="username" placeholder="Introduce tu Usuario" required>
+                    <br>
+                    <label for="password">Contraseña</label>
+                    <input type="text" name="password" id="password" placeholder="Introduce tu Contraseña" required>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
