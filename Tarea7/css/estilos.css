@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+
+article {
+    background-color: palevioletred;
+}
+
+.estilos--internos {
+    background-color: blue;
+}
+
+#encabezado {
+    color: coral;
+}
