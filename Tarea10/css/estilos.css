@@ -1,0 +1,107 @@
+#encabezado{
+    color: white;
+    background-color: black;
+    height: 80px;
+    /*El relleno es el espacio entre el contenido de un elemento y su borde
+    Se aplica las propiedades en sentido horario: top, right, bottom y left*/
+    padding: 10px 20px 15px 20px;
+
+    /*El margen es el espacio entre el borde de un elemento con otro elemento html*/
+    margin: 10px 20px 20px 30px;
+
+    /*El borde es el contorno visual alrededor de nuestro relleno y contenido de un elemento
+    Valores posible para border-style:
+    (solid, dotted, dashed, double, groove, ridge, inset, outset, hidden y none)*/
+
+    border: 50px groove aqua;
+    border-top-style: solid;
+    border-radius: 5%;
+
+    /*Se puede utilizar para crear efectos de sombra alrededor del borde de un elemento, se debe especificar
+    los valores para el desplazamiento horizontal, vertical, radio de desenfoque, radio de propagacion y color*/
+    box-shadow: -10px 10px 15px 15px black;
+    /*border box se utiliza para que rellenos, margenes y bordes no agreguen espacio extra a lo que se declaro en el ancho y alto de nuestro contenedor*/
+    box-sizing: content-box;
+}
+
+.introduccion{
+    color: black;
+    background-color: white;
+    height: 100px;
+    padding: 10px;
+    margin: 5px;
+    border: 50px groove fuchsia;
+    box-shadow: -10px 10px 15px 15px black;
+}
+
+.introduccion p{
+    border: 2px inset black;
+    height: 40px;
+    width: 800px;
+    box-sizing: border-box;
+}
+
+.introduccion span{
+    border: 1px double slateblue;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.texto_fuente{
+    background-color: black;
+    color: white;
+    border: 10px outset black;
+    padding: 10px;
+    margin: 15px;
+}
+
+.propiedades_texto{
+    border: 10px solid lime;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.propiedades_texto h2{
+    color: aquamarine;
+    text-align: center;
+    border: 2px double silver;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 5px 2px 5px silver;
+    letter-spacing: 20px;
+    word-spacing: 10px;
+    font-size: x-large;
+    font-weight: lighter;
+    font-family: 'BBH Sans Bartle'
+}
+
+.propiedades_texto p{
+    text-align: justify;
+    line-height: 1.2;
+    font-family: 'Smooch Sans'
+}
+
+.propiedades_fuentes{
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.propiedades_fuentes h2{
+    color: plum;
+    text-align: center;
+    border: 2px double silver;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 5px 5px 5px silver;
+    letter-spacing: 20px;
+    word-spacing: 10px;
+}
+
+.propiedades_fuentes p{
+    text-align: justify;
+    line-height: 1.2;
+}
