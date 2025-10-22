@@ -1,0 +1,72 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(0, 55, 255), rgb(0, 183, 255));
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+#encabezado{
+    border: 0.2em solid lightslategray;
+}
+
+#encabezado h1{
+    position: relative;
+    left: 20em;
+    bottom: 5em;
+}
+
+.contenedor_logo{
+    width: 15%;
+    height: 20em;
+    /*border: 0.5em dashed darkmagenta;
+    border-radius: 50%;*/
+}
+
+.contenedor_logo img{
+    width: 100%;
+    height: 100%;
+    /*min-width,    max-width*/
+    /*min-height,   min-height*/
+    object-fit: contain;
+    /*object-position: (top, left, right, bottom)*/
+    border: dashed black;
+    border-radius: 50%;
+}
+
+.elementos_posicionados{
+    border: 0.2em solid black;
+    padding: 1em;
+}
+
+.contenedor_imagen{
+    width: 15em;
+    height: 15em;
+    border: 0.4em dashed darkred;
+}
+
+.contenedor_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imagen_1{
+    position: relative;
+    top: 15em;
+    left: 15em;
+    bottom: 15em; /*Top y left tienen prioridad*/
+    right: 15em;
+}
+
+.imagen_2{
+    position: relative;
+    top: 0;
+    left: 0;
+}

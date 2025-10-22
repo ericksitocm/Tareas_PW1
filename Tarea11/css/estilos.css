@@ -1,0 +1,70 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 255, 185);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 180, 180);
+}
+
+/*Orden para los estilos de los estados en los enlaces (LVFHA)*/
+
+a:link{
+    color: aquamarine;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:focus{
+    color: limegreen;
+    background-color: black;
+    border: 0.2rem solid gold;
+}
+
+a:hover{
+    color: hotpink;
+    background-color: black;
+    border: 0.2rem solid silver;
+}
+
+a:active{
+    color: brown;
+    background-color: black;
+    text-decoration: dotted;
+}
+
+
+#encabezado{
+    border: 2px solid silver;
+    background-color: black;
+    font-size: 2rem; /*20 px*/
+}
+
+#encabezado h1{
+    font-size: 1.5rem; /*15 px*/
+    text-align: center;
+}
+
+.estados_enlaces h2{
+    text-align: center;
+    font-size: 3rem;
+    border: 0.2em dashed rgb(255, 36, 102);
+}
+
+.estados_enlaces ul{
+    border: 0.2em solid rgb(248, 4, 4);
+}
+
+/*Estilos de Listas*/
+.estados_enlaces ul li{
+    border: 0.2em solid rgba(242, 0, 255, 0.667);
+    /*List-style-type(disc, decimal, circle, lower-roman, lower-alha, upper-alha, none)*/
+    list-style-type: none;
+    /*List-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fhtml-5_174854&psig=AOvVaw0SIj4IKiC3uspr4kCUD05j&ust=1761244209377000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCICjy424uJADFQAAAAAdAAAAABAE)*/
+    list-style-image: url()
+}
