@@ -59,14 +59,43 @@ body{
 
 .imagen_1{
     position: relative;
-    top: 15em;
-    left: 15em;
-    bottom: 15em; /*Top y left tienen prioridad*/
-    right: 15em;
+    top: 0em;
+    left: 10em;
+    /*Top y left tienen prioridad*/
 }
 
 .imagen_2{
     position: relative;
-    top: 0;
-    left: 0;
+    top: 0em;
+    left: 5em;
 }
+
+.imagen_3{
+    position: relative;
+    z-index: 10;
+}
+
+.imagen_1 img{
+    filter: blur(0.2em);
+}
+
+.imagen_2 img{
+    filter: contrast(0.2em);
+}
+
+.imagen_3 img{
+    filter: grayscale(70%);
+}
+
+.imagen_4{
+    filter: sepia(5%);
+}
+
+/*Propiedad: filter
+Permite la manipulacion de imagenes, ofreciendo una gama de efectos como:
+blur(): Aplica desenfoque
+brightness(): Ajusta el brillo de un elemento
+contrast(): Modifica el contraste
+grayscale(): Convierte al elemento en escala de grises
+invert(): Invierte los colores del elemento
+sepia(): Aplica un efecto de tono sepia al elemento*/
