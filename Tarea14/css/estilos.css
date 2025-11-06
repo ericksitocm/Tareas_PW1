@@ -1,0 +1,40 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor--flotante{
+    padding: 0.5em;
+    border: 1em outset salmon;
+}
+
+.contenedor--flotante img{
+    width: 25%;
+    height: 20%;
+    float: right;
+    margin-top: 10em;
+}
+
+.contenedor--flotante p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 5em;
+}
+
+/*Consultas de medios o medios queries:
+Sirve para definir estilos a elementos html, segun el tamaño de pantalla
+del dispositivo usado, gracias a esto, se nos proporciona una herramienta para
+la creacion de diseños web responsivos y adaptables.*/
+
+@media screen and(max-width: 1000px){
+    .contenedor--flotante p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 3em;
+    }
+}
